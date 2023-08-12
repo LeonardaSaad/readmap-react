@@ -1,0 +1,8 @@
+Styled Components
+	1. npm i --save styled-components @types/styled-components
+	2. ./assets/styles/global.js :
+		- import createGlobalStyle;
+		- export;
+	3. import GlobalStyles in main.jsx e renderizar ele
+	
+	export const Container = styled.div ``;

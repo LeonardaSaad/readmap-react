@@ -1,0 +1,9 @@
+.FancyBorder-blue {
+    color: blue;
+    @include componentStyle(column, center);
+
+    &__title {
+        @include componentTitle();
+        @include defaultMargin();
+    }
+}

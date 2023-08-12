@@ -1,0 +1,12 @@
+.conditional-render  {
+    @include componentStyle(column, center);
+
+    &__title {
+        @include componentTitle();
+        @include defaultMargin();
+    }
+
+    &__buttons {
+        @include flexCenter(row, center)
+    }
+}

@@ -1,0 +1,77 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+// Components
+@import "./components/header.scss";
+@import "./components/state.scss";
+@import "./components/conditional-render.scss";
+@import "./components/mapAndKey.scss";
+@import "./components/compositionVsInheritance.scss";
+@import "./components/hooks.scss";
+@import "./components/events.scss";
+@import "./components/refs.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: calibri;
+    font-size: 20px;
+    color: $textColor;
+    background: $bgColor;
+}
+
+button {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0.5em 1em;
+    border-radius: 0.2em;
+    background: transparent;
+    border: .15em solid $primaryColor;
+}
+
+.btn-positive {
+    background: $positiveColor;
+}
+
+.btn-negative {
+    background: $negativeColor;
+}
+
+.btn-neutral {
+    background-color: transparent;
+    text-align: center;
+    width: 4vw;
+    height: 4vw;
+    border-radius: 0.5em;
+    margin: 0;
+    padding: 0;
+    font-weight: 800;
+}
+
+ul,
+li {
+    @include flexCenter(row, center);
+}
+
+input {
+    width: 20%;
+    padding: .4em;
+    border-radius: .1em;
+    text-align: center
+}
+
+.main__line {
+    @include lineStyle();
+}
+
+.testedoido {
+    @include componentStyle(column, center);
+
+    &__title {
+        @include componentTitle();
+        @include defaultMargin();
+    }
+}

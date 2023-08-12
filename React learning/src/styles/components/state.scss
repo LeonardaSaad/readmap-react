@@ -1,0 +1,13 @@
+.form-state {
+    @include componentStyle(column, center);
+
+    &__title {
+        @include componentTitle();
+        @include defaultMargin();
+    }
+
+    &__count,
+    &__button {
+        @include defaultMargin();
+    }
+}

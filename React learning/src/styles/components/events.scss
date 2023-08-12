@@ -1,0 +1,19 @@
+.container-onclick {
+    @include componentStyle(column, center);
+
+    &__title {
+        @include componentTitle();
+        @include defaultMargin();
+    }
+}
+
+.container-onclick__theme-dark {
+    @include componentStyle(column, center);
+    @include themeDark();
+
+    &__title {
+        @include themeDark();
+        @include componentTitle();
+        @include defaultMargin();
+    }
+}

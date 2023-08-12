@@ -1,0 +1,38 @@
+@mixin flexCenter($direction, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: center;
+}
+
+@mixin componentStyle($direction, $justify) {
+    @include flexCenter($direction, $justify);
+    width: calc(100vw/3);
+    max-width: calc(100vw/3);
+    border-radius: .3em;
+    margin: 1vh 1vw;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+@mixin lineStyle() {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: calc(94vh/4);
+}
+
+@mixin defaultMargin() {
+    margin: 1vw;
+}
+
+@mixin componentTitle() {
+    font-size: 14px;
+    font-weight: 100;
+    border-bottom: 1px solid #000;
+}
+
+@mixin themeDark() {
+    color: #fff;
+    background: #212028;
+}

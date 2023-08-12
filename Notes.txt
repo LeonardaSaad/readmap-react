@@ -1,0 +1,47 @@
+Function and Class Components
+    -> Maneira fácil:
+        function Welcome(props) {
+            return <h1>Hellos, {props.name}</h1>;
+        }
+    -> ES6 class:
+        class Welcome extends React.Components {
+            render() {
+                return <h1>Hellos, {this.props.name}</h1>; 
+            }
+        }
+
+Rendering a Component
+    -> Anteriormente:
+        const element = <div />
+    -> Hoje em dia:
+        const element = <Welcome nome="Sara"/>
+    -> exemplo:
+        function Welcome(props) {  
+            return <h1>Hello, {props.name}</h1>;
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        const element = <Welcome name="Sara" />;
+        root.render(element);
+
+Composing Components 
+    function App() {
+        return (
+            <div>
+                <Welcome name="Sara" />      
+                <Welcome name="Cahal" />      
+                <Welcome name="Edite" />
+            </div>
+        );
+    }
+
+State
+    - setState() agenda uma atualização para o componente state do objeto;
+    - Quando o estado mudar, o componente responde com uma nova renderização;
+    - Quando o setState() é assíncrono, não confie em this.state para refletir o novo valor. Passe uma função depois do setState
+    
+
+
+
+
+

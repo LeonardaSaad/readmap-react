@@ -1,0 +1,13 @@
+.number-list {
+    @include componentStyle(column, center);
+
+    &__title {
+        @include componentTitle();
+        @include defaultMargin();
+    }
+
+    &__numbers {
+        @include flexCenter(row, center);
+        width: 100%;
+    }
+}

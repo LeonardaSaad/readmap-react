@@ -1,0 +1,8 @@
+.refs {
+    @include componentStyle(column, center);
+
+    &__title {
+        @include componentTitle();
+    }
+
+}

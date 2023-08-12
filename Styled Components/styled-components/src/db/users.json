@@ -1,0 +1,58 @@
+{
+  "results": [
+    {
+      "id": 1,
+      "gender": "male",
+      "name": { "title": "Mr", "first": "William", "last": "Thomsen" },
+      "nat": "DK"
+    },
+    {
+      "id": 2,
+      "gender": "female",
+      "name": { "title": "Ms", "first": "Nerea", "last": "González" },
+      "nat": "ES"
+    },
+    {
+      "id": 3,
+      "gender": "male",
+      "name": { "title": "Mr", "first": "Ronnie", "last": "Lambert" },
+      "nat": "AU"
+    },
+    {
+      "id": 4,
+      "gender": "female",
+      "name": { "title": "Mrs", "first": "Romilda", "last": "Lima" },
+      "nat": "BR"
+    },
+    {
+      "id": 5,
+      "gender": "female",
+      "name": { "title": "Miss", "first": "Nandita", "last": "Bangera" },
+      "nat": "IN"
+    },
+    {
+      "id": 6,
+      "gender": "male",
+      "name": { "title": "Mr", "first": "Louis", "last": "Drok" },
+      "nat": "NL"
+    },
+    {
+      "id": 7,
+      "gender": "male",
+      "name": { "title": "Mr", "first": "Marco", "last": "Parra" },
+      "nat": "ES"
+    },
+    {
+      "id": 8,
+      "gender": "female",
+      "name": { "title": "Mrs", "first": "Rachel", "last": "Freeman" },
+      "nat": "US"
+    }
+  ],
+  "info": {
+    "seed": "887413a9de36a526",
+    "results": 10,
+    "page": 1,
+    "version": "1.4"
+  }
+}
